@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.second-showcase {
+  min-height: 600px;
+  width: 100%;
+}
+.swiper-slide {
+  width: 280px;
+}
+.swiper-wrapper {
+  min-height: 600px;
+}
+
+.swiper-slide img {
+  width: 100vw;
+}
+.swiper-slide-content {
+  display: flex;
+  padding: 20px 10px 10px 5%;
+  flex-direction: column;
+  gap: 10px;
+  font-family: sans-serif;
+}
+.swiper-slide-content-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.swiper-slide-content-title h4 {
+  font-size: 24px;
+}
+.swiper-slide-content button {
+  background: transparent;
+  border: 1px solid #000;
+  width: 100px;
+  height: 40px;
+}
+.swiper-slide-content button a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 11px;
+}
+.swiper-slide-content p {
+  font-size: 15px;
+  color: #585757;
+  max-width: 400px;
+}
+.view-all-featured-products {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.view-all-featured-products button {
+  background: #11181f;
+  width: 200px;
+  height: 40px;
+  border: none;
+}
+.view-all-featured-products button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.swiper-pagination-bullet {
+  background: #000;
+}
+@media (min-width: 600px) {
+  .second-showcase {
+    min-height: 800px;
+    width: 100%;
+  }
+
+  .swiper-wrapper {
+    min-height: 800px;
+  }
+}
+
+@media (min-width: 800px) {
+  .second-showcase {
+    min-height: 500px;
+    width: 100%;
+  }
+  .swiper-wrapper {
+    min-height: 700px;
+  }
+  .swiper-slide {
+    width: 100%;
+    height: 600px;
+    background-image: url("./images/image 2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .swiper-slide img {
+    display: none;
+  }
+  .swiper-slide-content {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  .second-showcase {
+    min-height: 900px;
+  }
+  .swiper-wrapper {
+    min-height: 900px;
+  }
+  .swiper-slide {
+    height: 800px;
+  }
+  .swiper-slide-content-title h6 {
+    font-size: 16px;
+  }
+  .swiper-slide-content-title h4 {
+    font-size: 28px;
+  }
+  .swiper-slide-content p {
+    font-size: 16px;
+  }
+  .swiper-slide-content {
+    gap: 20px;
+  }
+  .swiper-slide-content button {
+    width: 130px;
+    height: 50px;
+  }
+  .swiper-slide-content button a {
+    font-size: 11px;
+  }
+}
